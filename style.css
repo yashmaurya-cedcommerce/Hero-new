@@ -1,0 +1,111 @@
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.font--sz-small {
+  font-size: 0.8rem;
+}
+
+.font--sz-medium {
+  font-size: 1rem;
+}
+
+.font--op-light {
+    opacity: 75%;
+}
+
+.button--bg-primary {
+  background-color: #23a6f0;
+}
+
+.outline--c-primary {
+  outline: 2px solid #23a6f0;
+}
+
+.text--c-primary {
+  color: #23a6f0;
+}
+
+.bg--c-dark {
+  background-color: #252b42;
+}
+
+.bg--c-light-blue {
+  background-color: #8ec2f2;
+}
+
+.container__navbar {
+  background-color: #252b42;
+  color: white;
+}
+
+.container__navbar-shortcuts {
+  border: none;
+  background: none;
+}
+
+.container__site-cover-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/heroCover.png");
+  background-size: 100rem;
+  background-position: 53rem;
+}
+
+@media (min-width: 768px) {
+    .container__site-cover-section {
+      background-image: linear-gradient(
+          89.85deg,
+          #000000 0.13%,
+          #000000 0.14%,
+          rgba(0, 0, 0, 0) 99.56%
+        ),
+        url("/images/heroCover.png");
+      background-size: cover;
+      background-position: 0rem;
+    }
+}
+
+.container__site-cover-div > h1 {
+  margin: auto;
+  width: 60%;
+}
+
+.container__site-cover-div > p {
+  margin: auto;
+  width: 60%;
+}
+
+.container__cover-button-div {
+  width: 60%;
+  margin: auto;
+}
+
+.container__cover-button-div > button {
+  width: 10rem;
+  margin: auto;
+}
+
+.container__features-section {
+  color: white;
+}
+
+.container__features-div {
+  width: 95%;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.container__reviews-div > h1 {
+    width: 60%;
+    margin: auto;
+}
+
+.container__reviews-div > p {
+    width: 60%;
+    margin: auto;
+}
+
+/* .container__both-reviews > div {
+    
+} */
