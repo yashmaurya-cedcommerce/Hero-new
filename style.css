@@ -11,8 +11,12 @@ ul {
   font-size: 1rem;
 }
 
+.font--sz-large {
+  font-size: 2rem;
+}
+
 .font--op-light {
-    opacity: 75%;
+  opacity: 75%;
 }
 
 .button--bg-primary {
@@ -25,6 +29,22 @@ ul {
 
 .text--c-primary {
   color: #23a6f0;
+}
+
+.text--c-Ebony-Clay {
+  color: #252B42;
+}
+
+.bullet--bg-green {
+  background-color: #2DC071;
+  color: white;
+  border-radius: 50%;
+}
+
+.bullet--bg-gray {
+  background-color: #BDBDBD;
+  color: white;
+  border-radius: 50%;
 }
 
 .bg--c-dark {
@@ -40,6 +60,20 @@ ul {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .container__navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+  }
+}
+
+.container__navbar > div {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .container__navbar-shortcuts {
   border: none;
   background: none;
@@ -53,17 +87,17 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .container__site-cover-section {
-      background-image: linear-gradient(
-          89.85deg,
-          #000000 0.13%,
-          #000000 0.14%,
-          rgba(0, 0, 0, 0) 99.56%
-        ),
-        url("/images/heroCover.png");
-      background-size: cover;
-      background-position: 0rem;
-    }
+  .container__site-cover-section {
+    background-image: linear-gradient(
+        89.85deg,
+        #000000 0.13%,
+        #000000 0.14%,
+        rgba(0, 0, 0, 0) 99.56%
+      ),
+      url("/images/heroCover.png");
+    background-size: cover;
+    background-position: 0rem;
+  }
 }
 
 .container__site-cover-div > h1 {
@@ -93,19 +127,133 @@ ul {
 .container__features-div {
   width: 95%;
   margin: auto;
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 .container__reviews-div > h1 {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
 }
 
 .container__reviews-div > p {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
 }
 
-/* .container__both-reviews > div {
-    
+.container__both-reviews {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.container__both-reviews > div {
+  position: relative;
+}
+
+.container__both-reviews img {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 0%;
+  left: -10%;
+}
+
+.container__motto-title {
+  width: 70%;
+  margin: auto;
+}
+
+/* .container__motto-card {
+  position: relative;
+}
+
+.container__motto-card-details {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
 } */
+
+.container__motto-card-details > img {
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container__motto-card-details > img {
+    width: 450px
+  }
+}
+
+.container__pricing-section > div {
+  width: 60%;
+  margin: auto;
+}
+
+.container__pricing-container {
+  max-width: 1280px;
+  margin: auto;
+  width: 80%;
+}
+
+.container__pricing-features {
+  border-radius: 6px;
+}
+
+.container__pricing-features > div {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container__pricing-features > div {
+    width: 75%;
+    margin: auto;
+    max-width: 350px;
+  } 
+}
+
+.container__appointment {
+  background-image: url('/images/appointmentBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container__appointment-flex-container {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.container__appointment-form > button {
+  border-radius: 4px;
+  width: 200px;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container__input-flex-div > input {
+    width: 150px;
+  }
+
+  .container__input-flex-div > select {
+    width: 150px;
+  }
+}
+
+.container__consulting-div {
+  width: 70%;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.container__consulting-div > button {
+  border-radius: 4px;
+}
+
+.container__footer-row {
+  width: 90%;
+  margin: auto;
+  max-width: 1280px;
+}
