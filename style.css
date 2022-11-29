@@ -11,6 +11,10 @@ ul {
   font-size: 1rem;
 }
 
+.font--sz-average {
+  font-size: 1.5rem;
+}
+
 .font--sz-large {
   font-size: 2rem;
 }
@@ -32,17 +36,17 @@ ul {
 }
 
 .text--c-Ebony-Clay {
-  color: #252B42;
+  color: #252b42;
 }
 
 .bullet--bg-green {
-  background-color: #2DC071;
+  background-color: #2dc071;
   color: white;
   border-radius: 50%;
 }
 
 .bullet--bg-gray {
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   color: white;
   border-radius: 50%;
 }
@@ -97,22 +101,31 @@ ul {
       url("/images/heroCover.png");
     background-size: cover;
     background-position: 0rem;
+    height: 100vh;
   }
 }
 
-.container__site-cover-div > h1 {
+.container__site-cover-container {
+  height: auto;
+  max-width: 1280px;
   margin: auto;
-  width: 60%;
 }
 
-.container__site-cover-div > p {
-  margin: auto;
-  width: 60%;
+@media (min-width: 768px) {
+  .container__site-cover-container {
+    height: 100vh;
+  }
 }
 
-.container__cover-button-div {
-  width: 60%;
-  margin: auto;
+.container__site-cover-div {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .container__site-cover-div {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .container__cover-button-div > button {
@@ -163,16 +176,6 @@ ul {
   margin: auto;
 }
 
-/* .container__motto-card {
-  position: relative;
-}
-
-.container__motto-card-details {
-  position: absolute;
-  bottom: 5%;
-  left: 20%;
-} */
-
 .container__motto-card-details > img {
   width: 100%;
   margin: auto;
@@ -180,7 +183,7 @@ ul {
 
 @media (max-width: 768px) {
   .container__motto-card-details > img {
-    width: 450px
+    width: 450px;
   }
 }
 
@@ -211,11 +214,11 @@ ul {
     width: 75%;
     margin: auto;
     max-width: 350px;
-  } 
+  }
 }
 
 .container__appointment {
-  background-image: url('/images/appointmentBG.jpg');
+  background-image: url("/images/appointmentBG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -233,17 +236,23 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .container__appointment-form > button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .container__input-flex-div > input {
-    width: 150px;
+    width: 100%;
   }
 
   .container__input-flex-div > select {
-    width: 150px;
+    width: 100%;
   }
 }
 
 .container__consulting-div {
-  width: 70%;
+  width: 80%;
   margin: auto;
   max-width: 1280px;
 }
@@ -253,7 +262,25 @@ ul {
 }
 
 .container__footer-row {
-  width: 90%;
+  width: 80%;
+  margin: auto;
+  max-width: 1280px;
+}
+
+.container__footer-bottom-section {
+  background-color: #252b42;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container__footer-bottom-section {
+    background-color: white;
+    color: black;
+  }
+}
+
+.container__footer-bottom-div {
+  width: 80%;
   margin: auto;
   max-width: 1280px;
 }
